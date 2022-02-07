@@ -33,17 +33,30 @@ h2 {
     color: white;
     text-align: left;
 }
-
-button {
-    border-radius: 12px;
+p {
     font-family: "Lucida Console", Monaco, monospace;
     letter-spacing: 2px;
     word-spacing: 2px;
-    background-color: rgb(255, 255, 255);
     color: white;
-    border: 2px solid #ffffff;
-
+    text-align: left;
 }
+
+button {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: .5em;
+        border: solid .25em transparent;
+        padding: 1em 1.5em;
+        border-radius: 9em;
+        background: 
+          linear-gradient(to right bottom, var(--slist)) 
+            border-box;
+        font: 700 1.5em/ 1.25 ubuntu, sans-serif;
+        text-transform: uppercase;
+        
+        button::after { content: attr(data-ico) }
+      }
+    
 
 h4 {
     color: white;
@@ -75,3 +88,5 @@ h4 {
         0 0 151px rgb(255, 187, 244);
  }
 
+  
+  
